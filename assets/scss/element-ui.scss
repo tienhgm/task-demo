@@ -1,0 +1,70 @@
+$--color-success: #19BE6B !default;
+$--color-warning: #FF9900 !default;
+$--color-danger: #F5222D !default;
+$--color-info: #17233D !default;
+$--input-focus-border: #D798C1 !default;
+$--input-focus-border: #D798C1 !default;
+$--color-primary: #D798C1 !default;
+
+/* icon font path, required */
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index.scss";
+.el-radio__input {
+    .el-radio__inner {
+        background: white !important;
+        width: 16px;
+        height: 16px;
+    }
+    .el-radio__inner::after {
+        height: 10px;
+        width: 10px;
+        background-color: #D798C1;
+    }
+}
+
+.el-button:hover,
+.el-button:focus {
+    border-color: #d78cc1 !important;
+}
+
+.error.dirty .el-input__inner {
+    border-color: #eb5757 !important;
+}
+
+.el-pagination {
+    justify-content: center;
+    display: flex;
+    .el-pager li {
+        border-radius: 5px !important;
+    }
+}
+
+.border-none .el-input__inner,
+.border-none .el-input__inner:active,
+.border-none .el-input__inner:hover,
+.border-none .el-input__inner:focus {
+    border: none;
+}
+
+.el-icon-more {
+    transform: rotate(90deg);
+}
+
+.el-pager .el-icon-more {
+    transform: rotate(00deg) !important;
+}
+
+.dropdown-list .el-dropdown-menu__item {
+    display: flex;
+    img {
+        margin-right: 10px;
+    }
+    &:hover {
+        background-color: #E3E2E2;
+        color: #5A5A5A;
+    }
+    &.delete {
+        color: #FF5F5F;
+    }
+}
